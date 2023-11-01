@@ -13,3 +13,18 @@ swith.addEventListener("click", (e) => {
   swith.classList.toggle("active");
   document.body.classList.toggle("active");
 });
+
+//Efecto de animacion de scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
