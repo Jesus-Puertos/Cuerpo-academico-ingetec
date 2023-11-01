@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CA INGETEC</title>
+    <!--
+       fAVICON
+       -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon_io/site.webmanifest" />
+
+    <!--
+       FontAwesome
+       -->
+    <script
+      src="https://kit.fontawesome.com/a041d4383c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- iCONS
+     -->
+    <!-- Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    Google Font 
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+        preload styles
+     -->
+    <link rel="preload" href="./CSS/normalize.css" as="style" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+
+    <link rel="preload" href="./CSS/styles.css" as="style" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+
+    <!-- 
+      jquery
+     -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header>
+      <nav>
+        <img src="img/Ingetec-Logo-removebg.png" alt="Logo de ingetec" />
+        <div class="navigation">
+          <ul>
+            <i id="menu-close" class="fa-regular fa-circle-xmark"></i>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li class="switch">
+              <i class="bx bxs-sun"></i>
+              <i class="bx bxs-moon"></i>
+            </li>
+          </ul>
+          <img id="menu-btn" src="./img/menu-2.svg" alt="Menu hamburguesa" />
+        </div>
+      </nav>
+    </header>
+    <!-- Home -->
+    <section class="home">
+      <h2>Cuerpo Académico <span class="title-blue">INGE</span>TEC</h2>
+      <p>
+        Generar conocimiento de calidad, por medio de las herramientas y
+        técnicas de investigación básica y aplicada que contribuyan al impacto
+        de las áreas de los sistemas computacionales, formación académica de
+        recursos humanos especializados y altamente competitivos por medio del
+        programa educativo de Ingeniería en Sistemas Computacionales, así como
+        publicar y difundir los resultados de las investigaciones
+      </p>
+      <div class="btn">
+        <a class="blue" href="#">Saber mas</a>
+        <a class="yellow" href="#">Ver proyectos</a>
+      </div>
+    </section>
+
+    <!-- Lines of investigation -->
+    <section class="features">
+      <h1>Líneas de investigación</h1>
+      <p>
+        Ante el Tecnológico Nacional de México TECNM se tienen registradas tres
+        líneas de investigación de la carrera de Ingeniería en Sistemas
+        Computacionales del ITSZ
+      </p>
+      <div class="fea-base">
+        <div class="fea-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-user-share"
+            width="52"
+            height="52"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h3"></path>
+            <path d="M16 22l5 -5"></path>
+            <path d="M21 21.5v-4.5h-4.5"></path>
+          </svg>
+          <h3>
+            Computación Ubicua y Desarrollo de Interfaces Persona Ordenador
+          </h3>
+          <p>
+            El mundo cada vez más se está convirtiendo en un tablero de juego
+            electrónico, conforme aumentan las aplicaciones, el desarrollo de
+            tecnologías inalámbricas y dispositivos computacionales móviles y, a
+            la vez, su uso se vuelve más fácil y más “natural” para todo tipo de
+            usuarios, lo que provoca que las personas de todas las edades
+            dependan de la tecnología.
+          </p>
+        </div>
+        <div class="fea-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-device-analytics"
+            width="52"
+            height="52"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z"
+            ></path>
+            <path d="M7 20l10 0"></path>
+            <path d="M9 16l0 4"></path>
+            <path d="M15 16l0 4"></path>
+            <path d="M8 12l3 -3l2 2l3 -3"></path>
+          </svg>
+          <h3>Tecnologías Emergentes de la Información y Comunicación</h3>
+          <p>
+            Tecnologías emergentes o tecnologías convergentes son términos
+            usados para señalar la emergencia y convergencia de nuevas
+            tecnologías, respectivamente, con potencial de demostrarse como
+            tecnologías disruptivas. Y entre ellas, deben citarse la
+            nanotecnología, la biotecnología, las tecnologías de la información
+            y la comunicación, la ciencia cognitiva, la robótica, y la
+            inteligencia artificial.
+          </p>
+        </div>
+        <div class="fea-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-cloud-computing"
+            width="52"
+            height="52"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M6.657 16c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878"
+            ></path>
+            <path d="M12 16v5"></path>
+            <path d="M16 16v4a1 1 0 0 0 1 1h4"></path>
+            <path d="M8 16v4a1 1 0 0 1 -1 1h-4"></path>
+          </svg>
+          <h3>Cómputo en la Nube</h3>
+          <p>
+            La computación en la nube es la disponibilidad a pedido de los
+            recursos del sistema informático, especialmente el almacenamiento de
+            datos y la capacidad de cómputo, sin una gestión activa directa por
+            parte del usuario. El término se usa generalmente para describir los
+            centros de datos disponibles desde cualquier lugar para muchos
+            usuarios a través de Internet desde cualquier dispositivo móvil o
+            fijo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyects -->
+    <section class="proyects container">
+      <h1>Producción académica</h1>
+      <p>
+        En esta sección, te invitamos a explorar la rica producción académica de
+        INGETEC, nuestro destacado cuerpo académico. Aquí encontrarás una amplia
+        variedad de investigaciones, publicaciones y proyectos que reflejan
+        nuestro compromiso con el avance del conocimiento y la excelencia en el
+        ámbito académico.
+      </p>
+
+      <div class="card__container">
+        <article class="card__article">
+          <img src="./img/project-1.jpg" alt="image" class="card__img" />
+
+          <div class="card__data">
+            <span class="card__description">Desarrollado por Martin</span>
+            <h2 class="card__title">DashBoard</h2>
+            <a href="#" class="card__button">Leer más</a>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <img src="./img/project-2.png" alt="image" class="card__img" />
+
+          <div class="card__data">
+            <span class="card__description">Desarrollado por Ricardo</span>
+            <h2 class="card__title">Stadistics</h2>
+            <a href="#" class="card__button">Leer más</a>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <img src="./img/project-3.jpg" alt="image" class="card__img" />
+
+          <div class="card__data">
+            <span class="card__description">Desarrollado por Martin</span>
+            <h2 class="card__title">Sitio web de constructora</h2>
+            <a href="#" class="card__button">Leer más</a>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <img src="./img/project-3.jpg" alt="image" class="card__img" />
+
+          <div class="card__data">
+            <span class="card__description">Desarrollado por Martin</span>
+            <h2 class="card__title">Sitio web de constructora</h2>
+            <a href="#" class="card__button">Leer más</a>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <img src="./img/project-3.jpg" alt="image" class="card__img" />
+
+          <div class="card__data">
+            <span class="card__description">Desarrollado por Martin</span>
+            <h2 class="card__title">Sitio web de constructora</h2>
+            <a href="#" class="card__button">Leer más</a>
+          </div>
+        </article>
+
+        <article class="card__article">
+          <img src="./img/project-3.jpg" alt="image" class="card__img" />
+
+          <div class="card__data">
+            <span class="card__description">Desarrollado por Martin</span>
+            <h2 class="card__title">Sitio web de constructora</h2>
+            <a href="#" class="card__button">Leer más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- profiles -->
+    <section class="profiles">
+      <h1>Integrantes</h1>
+      <p>Conoce a nuestros integrantes 🧐📲</p>
+      <div class="prof-box">
+        <div class="profile">
+          <img
+            src="./img/integrantes/integrante-1.png"
+            alt="Martin Contreras"
+          />
+          <h6>Martin Contreras de la Cruz</h6>
+          <p>Ingeniero en sistemas y experto en Java</p>
+          <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="./img/integrantes/integrante-2.png"
+            alt="Martin Contreras"
+          />
+          <h6>Ricardo García Castro</h6>
+          <p>Ingeniero en sistemas y experto en Java</p>
+          <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="./img/integrantes/integrante-3.png"
+            alt="Martin Contreras"
+          />
+          <h6>Ing. Ricardo García Castro</h6>
+          <p>Ingeniero en sistemas y experto en Java</p>
+          <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img
+            src="./img/integrantes/integrante-4.png"
+            alt="Martin Contreras"
+          />
+          <h6>Ing. Martín Contreras de la Cruz</h6>
+          <p>Ingeniero en sistemas y experto en Java</p>
+          <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+
+        <div class="profile profile__center">
+          <img
+            src="./img/integrantes/integrante-5.png"
+            alt="Martin Contreras"
+          />
+          <h6>Susana</h6>
+          <p>Ingeniero en sistemas y experto en Java</p>
+          <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-col">
+        <h3>Proyectos</h3>
+        <li>Laguna Hack</li>
+        <li>Integradores</li>
+        <li>Integrantes</li>
+        <li>Vinculación</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Links</h3>
+        <li>Facebook</li>
+        <li>Website</li>
+        <li>Twitter</li>
+        <li>YouTube</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Noticias</h3>
+        <li>Laguna Hack 2024</li>
+        <li>Convocatorias</li>
+        <li>Catalogo</li>
+        <li>Servicios</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Premios</h3>
+        <li>Laguna Hack</li>
+        <li>Integradores</li>
+        <li>Integrantes</li>
+        <li>Vinculación</li>
+      </div>
+      <div class="footer-col">
+        <h3>Newslater</h3>
+        <p>Suscribete para estar al tanto de todo.</p>
+        <div class="suscribe">
+          <input type="text" placeholder="Tu dirección de correo" />
+          <a href="#" class="yellow">Suscribete</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2023 Tequila, Ver -Todos los derechos reservados</p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
