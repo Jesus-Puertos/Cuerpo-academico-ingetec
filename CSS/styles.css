@@ -757,6 +757,12 @@ footer .copyright .pro-links i:hover {
   cursor: pointer;
 }
 
+footer .footer-logo img {
+  align-items: center;
+  width: 20rem;
+  height: auto;
+}
+
 /* RESPONSIVE FOR TABLETS */
 @media (max-width: 769px) {
   nav {
@@ -831,7 +837,8 @@ footer .copyright .pro-links i:hover {
     text-align: center;
   }
 
-  footer.copyright .pro-links {
+  footer.copyright .pro-links,
+  .footer-logo {
     margin-top: 15px;
   }
 }
@@ -839,4 +846,8 @@ footer .copyright .pro-links i:hover {
 /* RESPONSIVE FOR MOBILE */
 
 @media (max-width: 475px) {
+  footer.copyright .pro-links,
+  .footer-logo {
+    margin-top: 25px;
+  }
 }
