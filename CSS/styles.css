@@ -161,6 +161,16 @@ img {
   transition-delay: 1000ms;
 }
 
+/*Animacion a about-fe*/
+
+.about-container:nth-child(2) {
+  transition-delay: 250ms;
+}
+
+.about-container:nth-child(3) {
+  transition-delay: 400ms;
+}
+
 /* Header */
 nav {
   z-index: 999;
@@ -359,6 +369,7 @@ body.active .home p {
   padding: 10px;
   background-color: var(--backgroundCards);
   text-align: start;
+  border-radius: 1rem;
 }
 
 body.active .features .fea-box {
@@ -435,8 +446,8 @@ body.active .features .fea-box p {
 }
 
 body.active .border {
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 body.active .wave {
