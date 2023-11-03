@@ -9,6 +9,7 @@
   --buttonBlue: #3da9fc;
   --buttonYellow: #fdc93b;
   --buttonText: #fffffe;
+  --NavBg: #20252c;
 
   /* Ilustration */
   --black: rgba(0, 0, 0, 0.15);
@@ -253,7 +254,7 @@ body.active nav .navigation ul li a:hover {
 
 body.active .switch {
   border: none;
-  background-color: #000000;
+  background-color: var(--NavBg);
 }
 
 .switch i {
@@ -838,9 +839,17 @@ footer .footer-logo img {
   padding-bottom: 1.5rem;
 }
 
+body.active .about-container .about-text h2 {
+  color: var(--main);
+}
+
 .about-container .about-text p {
   color: var(--paragraph);
   font-weight: 300;
+}
+
+body.active .about-container .about-text p {
+  color: var(--main);
 }
 
 .about-container .about-text .about-fe {
@@ -864,6 +873,10 @@ footer .footer-logo img {
 .about-container .about-text .about-fe .fe-text h5 {
   font-size: 1.6rem;
   color: var(--headline);
+}
+
+body.active .about-container .about-text .about-fe .fe-text h5 {
+  color: var(--main);
 }
 
 .trust {
