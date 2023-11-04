@@ -927,6 +927,11 @@ body.active .about-container .about-text .about-fe .fe-text h5 {
   overflow-x: auto;
 }
 
+body.active .table-widget {
+  background-color: var(--NavBg);
+  border: 2px solid var(--NavBg);
+}
+
 .table-widget table {
   border-collapse: collapse;
   min-height: 480px;
@@ -941,10 +946,17 @@ body.active .about-container .about-text .about-fe .fe-text h5 {
   margin: 8px 0px;
 }
 
+body.active .table-widget caption {
+  color: var(--main);
+}
+
 .table-widget th {
   padding: 20px 16px;
   font-size: 1.775rem;
   color: var(--paragraph);
+}
+body.active .table-widget th {
+  color: #ffffff90;
 }
 
 .table-widget thead {
@@ -960,6 +972,10 @@ body.active .about-container .about-text .about-fe .fe-text h5 {
   padding: 8px 16px;
 }
 
+body.active .table-widget td {
+  color: var(--main);
+}
+
 .table-widget tbody tr {
   cursor: pointer;
   animation: fadeIn 0.5s ease-in-out;
@@ -969,8 +985,16 @@ body.active .about-container .about-text .about-fe .fe-text h5 {
   background-color: var(--odd-row);
 }
 
+body.active .table-widget tbody tr:nth-child(odd) {
+  background-color: #121212;
+}
+
 .table-widget tbody tr:hover {
   background-color: #e2ecff;
+}
+
+body.active .table-widget tbody tr:hover {
+  background-color: #0e0e10;
 }
 
 .table-row-count {
@@ -1009,6 +1033,10 @@ body.active .about-container .about-text .about-fe .fe-text h5 {
   font-size: 1.3rem;
   font-weight: 700;
   white-space: nowrap;
+}
+
+body.active .profile-info__name {
+  color: var(--main);
 }
 
 .profile-info__alias {

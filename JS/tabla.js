@@ -131,7 +131,7 @@ const mappedRecords = events
               </span>
           </td>
           <td>
-          ${new Date(teamMember.date).toLocaleDateString("en-us", {
+          ${new Date(teamMember.date).toLocaleDateString("es-mx", {
             weekday: "short",
             year: "numeric",
             month: "short",
