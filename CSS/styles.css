@@ -1117,6 +1117,63 @@ a.active1 {
   text-decoration: underline;
 }
 
+/* Noticias */
+
+.blog-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8vw;
+}
+
+.blog-container .blogs {
+  width: 60%;
+}
+
+.blog-container .blogs img {
+  width: 100%;
+  border-radius: 1.9rem;
+}
+
+.blog-container .blogs .post {
+  padding-bottom: 6rem;
+}
+
+.blog-container .blogs .post h3 {
+  color: var(--headline);
+  padding: 1.5rem 0 1rem 0;
+}
+
+.blog-container .blogs .post p {
+  color: var(--paragraph);
+  padding-bottom: 2rem;
+}
+
+.blog-container .blogs .post a {
+  text-decoration: unset;
+  font-size: 1.5rem;
+  color: var(--main);
+  padding: 1.3rem 3.5rem;
+  background-color: var(--highlight);
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.blog-container .cate {
+  width: 30%;
+}
+
+.blog-container .cate h2 {
+  padding-bottom: 0.7rem;
+}
+
+.blog-container .cate a {
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+  line-height: 45px;
+}
+
 /* RESPONSIVE FOR TABLETS */
 @media (max-width: 769px) {
   nav {
@@ -1216,6 +1273,10 @@ a.active1 {
     padding: 12px;
     margin-bottom: 1.2rem;
   }
+  /* noticias */
+  .blog-container {
+    padding: 8vw 4vw;
+  }
 }
 
 /* RESPONSIVE FOR MOBILE */
@@ -1284,6 +1345,19 @@ a.active1 {
 
   .table-widget th {
     display: none;
+  }
+
+  /* noticias */
+  .blog-container {
+    flex-direction: column-reverse;
+  }
+
+  .blog-container .blogs {
+    width: 100%;
+  }
+
+  .blog-container .cate {
+    width: 100%;
   }
 }
 
