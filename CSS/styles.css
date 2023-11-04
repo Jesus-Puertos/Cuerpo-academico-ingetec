@@ -660,6 +660,7 @@ body.active .wave {
 .profiles .prof-box .profile {
   background-color: var(--buttonYellow);
   padding: 30px 10px;
+  /* border-radius: 0.5rem; */
 }
 
 .profile img {
