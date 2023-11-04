@@ -15,6 +15,7 @@
   --black: rgba(0, 0, 0, 0.15);
   --stroke: #094067;
   --main: #fffffe;
+  --main60: #fffffe60;
   --highlight: #3da9fc;
   --seconday: #90b4ce;
   --tertiary: #ef4565;
@@ -672,6 +673,7 @@ body.active .wave {
 }
 
 .profile img {
+  filter: drop-shadow(1px 4px 6px rgba(0, 0, 0, 0.4));
   border-radius: 50%;
 }
 
@@ -702,6 +704,10 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+
+body.active footer {
+  background-color: var(--NavBg);
 }
 
 footer .footer-col {
@@ -741,6 +747,10 @@ footer input {
   border: none;
   outline: none;
   color: var(--main);
+}
+
+footer input::placeholder {
+  color: #ffffff60;
 }
 
 footer .suscribe a {
