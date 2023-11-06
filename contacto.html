@@ -70,6 +70,17 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+
+    <!-- 
+      gsap
+     -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+
+    <!-- The following plugin is a Club GSAP perk. Download it and include it locally.-->
+    <script src="./JS/MorphSVGPlugin.min.js"></script>
   </head>
   <body>
     <!-- Preload -->
@@ -104,7 +115,243 @@
     </header>
     <!-- Home -->
     <section class="about-home">
-      <h2>Sobre El Cuerpo Académico <span class="title-blue">INGE</span>TEC</h2>
+      <h2>Contacto <span class="title-blue">INGE</span>TEC</h2>
+    </section>
+
+    <!-- contacto -->
+
+    <section class="contact">
+      <div class="getin">
+        <h2>Pongase en contacto con nosotros</h2>
+        <p>¿Necesitas ayuda? Buscanos y encontraremos la forma de orientarte</p>
+        <div class="getin-details">
+          <h3>Ubicación</h3>
+          <div>
+            <i class="fa-solid fa-location-dot get"></i>
+            <p>Av. Benito Juárez 296A, Aquiles Serdan, 94720 Nogales, Ver.</p>
+          </div>
+          <h3>Telefono</h3>
+          <div>
+            <i class="fa-solid fa-phone get"></i>
+            <p>(01)272 727 04 49</p>
+          </div>
+          <h3>Correo</h3>
+          <div>
+            <i class="fa-regular fa-envelope get"></i>
+            <p>caingetec@zongolica.tecnm.mx</p>
+          </div>
+          <h3>Website ITSZ</h3>
+          <div>
+            <i class="fa-solid fa-up-right-from-square get"></i>
+            <p>caingetec@zongolica.tecnm.mx</p>
+          </div>
+          <h3>Siguenos</h3>
+          <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <h4>Contactanos</h4>
+        <p>Rellena este formulario para enviarnos un mensaje</p>
+        <div class="form-row">
+          <input type="text" placeholder="Tu Nombre" name="" id="" />
+          <input type="text" placeholder="Tu Correo" name="" id="" />
+        </div>
+        <div class="form-col">
+          <input type="text" placeholder="Asunto" name="" id="" />
+        </div>
+        <div class="form-col">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="8"
+            placeholder="Tu mensaje"
+          ></textarea>
+        </div>
+        <div class="form-col">
+          <button>
+            <svg
+              viewBox="0 0 1400 1080"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="paperPlaneRoute"
+                d="M563.558,526.618 C638.854,410.19 787.84,243.065 916.53,334.949 1041.712,424.328 858.791,877.927 743.926,856.655 642.241,838.669 699.637,688.664 700,540"
+                stroke="white"
+                stroke-width="3"
+                style="
+                  stroke-dashoffset: 0.001px;
+                  stroke-dasharray: 0px, 999999px;
+                "
+              />
+              <g id="rectSent" clip-path="url(#clipPath)">
+                <g id="rectSentItems">
+                  <rect
+                    id="sentBase"
+                    x="460"
+                    y="468.5"
+                    width="480"
+                    height="143"
+                    rx="23"
+                    fill="white"
+                  />
+                  <text
+                    id="txtSent"
+                    fill="#4F67ED"
+                    xml:space="preserve"
+                    style="white-space: pre"
+                    font-family="Roboto"
+                    font-size="82"
+                    font-weight="bold"
+                    letter-spacing="0.025em"
+                  >
+                    <tspan x="637.487" y="568.027">Enviado</tspan>
+                  </text>
+                </g>
+              </g>
+              <g id="base">
+                <g filter="url(#flShadow)">
+                  <rect
+                    id="btnBase"
+                    x="418.117"
+                    y="460.55"
+                    width="563.765"
+                    height="158.899"
+                    rx="27"
+                    fill="#F1F3FF"
+                  />
+                </g>
+                <text
+                  id="txtSend"
+                  fill="#291D89"
+                  xml:space="preserve"
+                  style="white-space: pre"
+                  font-family="Roboto"
+                  font-size="82"
+                  font-weight="bold"
+                  letter-spacing="0.06em"
+                >
+                  <tspan x="679.379" y="568.027">Enviar</tspan>
+                </text>
+                <g
+                  id="paperPlane"
+                  style="transform-origin: 0px 0px 0px"
+                  data-svg-origin="563.55859375 527.734375"
+                  transform="matrix(0.8396,0.5432,-0.5432,0.8396,377.09924,-222.6639)"
+                >
+                  <path
+                    id="paperPlanePath"
+                    d="M560.611 481.384C562.003 479.263 565.113 479.263 566.505 481.384L607.063 543.177C615.657 556.272 607.507 573.375 592.766 575.676L566.422 557.462V510.018C566.422 508.436 565.14 507.154 563.558 507.154C561.976 507.154 560.693 508.436 560.693 510.018V557.462L534.349 575.676C519.609 573.375 511.459 556.272 520.053 543.177L560.611 481.384Z"
+                    fill="#4F67EB"
+                  />
+                </g>
+              </g>
+              <circle
+                id="cBottom"
+                cx="700"
+                cy="540"
+                r="97.516"
+                fill="#C23F3F"
+                class="hidden"
+              />
+              <circle
+                id="cTop"
+                cx="700"
+                cy="502.365"
+                r="107.898"
+                fill="#C23F3F"
+                class="hidden"
+              />
+              <circle
+                id="cCenter"
+                cx="700"
+                cy="540"
+                r="123"
+                fill="#A74C4C"
+                class="hidden"
+              />
+              <circle
+                id="cEnd"
+                cx="495"
+                cy="540"
+                r="98"
+                fill="#F1F3FF"
+                class="hidden"
+              />
+              <path
+                id="tickMark"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M597.3 489.026C595.179 487.257 592.026 487.541 590.257 489.662L550.954 536.768L534.647 522.965C532.539 521.181 529.384 521.444 527.6 523.551L519.096 533.598C517.312 535.706 517.575 538.861 519.682 540.645L538.606 556.662C538.893 557.162 539.272 557.621 539.74 558.012L549.847 566.445C551.967 568.214 555.12 567.929 556.889 565.809L608.042 504.501C609.811 502.38 609.527 499.227 607.406 497.458L597.3 489.026Z"
+                fill="#4E67E8"
+                class="hidden"
+              />
+              <defs>
+                <clipPath id="clipPath">
+                  <rect
+                    id="mask1"
+                    x="700"
+                    y="450"
+                    width="520"
+                    height="180"
+                    fill="white"
+                    id="clipRect"
+                  />
+                </clipPath>
+                <filter
+                  id="flShadow"
+                  x="0"
+                  y="0"
+                  width="1000"
+                  height="1000"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  />
+                  <feOffset dx="4" dy="4" />
+                  <feGaussianBlur stdDeviation="3.5" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.5125 0 0 0 0 0.420677 0 0 0 0 0.420677 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236.03511830482856!2d-97.16352752708151!3d18.817667944889948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c502befcd458fb%3A0x3e2e404f65c378aa!2sInstituto%20Tecnol%C3%B3gico%20Superior%20de%20Zongolica%20Sede%20Nogales!5e0!3m2!1ses-419!2smx!4v1699255634700!5m2!1ses-419!2smx"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
 
     <!-- footer -->
@@ -174,7 +421,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./JS/button.js"></script>
     <script src="./JS/script.js"></script>
   </body>
 </html>
