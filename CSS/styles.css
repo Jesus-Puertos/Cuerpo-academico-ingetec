@@ -1395,22 +1395,56 @@ a.active1 {
   margin-bottom: 20px;
 }
 
-.contact .form button {
-  padding: 0;
+/* .contact .form button {
+  font-size: 2rem;
+  padding: 13px 25px;
+  background-color: var(--highlight);
+  border-radius: 5px;
   outline: none;
   border: none;
-  margin-left: 210px;
-  background-color: var(--backgroundCards);
-}
-
-.contact .form button svg {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-#base {
+  font-weight: 600;
   cursor: pointer;
+  color: var(--main);
+} */
+.contact .form button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.contact .form button:after,
+.contact .form button:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.contact .form button:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+.contact .form button:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+.contact .form button:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.contact .form button:hover:before,
+.contact .form button:hover:after {
+  width: 100%;
+  height: 100%;
 }
 
 .map {
@@ -1536,16 +1570,6 @@ a.active1 {
   .contact .getin {
     width: 25rem;
   }
-
-  .contact .form button {
-    width: 20%;
-  }
-  .contact .form svg {
-    width: 10rem;
-  }
-  svg {
-    transform: scale(3.8);
-  }
 }
 
 /* RESPONSIVE FOR MOBILE */
@@ -1661,16 +1685,6 @@ a.active1 {
 
   .contact .form .form-row input {
     width: 100%;
-  }
-
-  .contact .form button {
-    width: 20%;
-  }
-  .contact .form svg {
-    width: 10rem;
-  }
-  svg {
-    transform: scale(3.8);
   }
 }
 
