@@ -72,15 +72,13 @@
     ></script>
 
     <!-- 
-      gsap
+      Animate.css
      -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-
-    <!-- The following plugin is a Club GSAP perk. Download it and include it locally.-->
-    <script src="./JS/MorphSVGPlugin.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Preload -->
@@ -157,25 +155,49 @@
       <div class="form">
         <h4>Contactanos</h4>
         <p>Rellena este formulario para enviarnos un mensaje</p>
-        <div class="form-row">
-          <input type="text" placeholder="Tu Nombre" name="" id="" />
-          <input type="text" placeholder="Tu Correo" name="" id="" />
-        </div>
-        <div class="form-col">
-          <input type="text" placeholder="Asunto" name="" id="" />
-        </div>
-        <div class="form-col">
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="8"
-            placeholder="Tu mensaje"
-          ></textarea>
-        </div>
-        <div class="form-col">
-          <button>Enviar Mensaje</button>
-        </div>
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/226w0496@zongolica.tecnm.mx"
+          method="POST"
+        >
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="form-row">
+            <input type="text" placeholder="Tu Nombre" name="name" id="name" />
+            <input
+              type="email"
+              placeholder="Tu Correo"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="form-col">
+            <input
+              type="text"
+              placeholder="Asunto"
+              name="subject"
+              id="subject"
+            />
+          </div>
+          <div class="form-col">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="8"
+              placeholder="Tu mensaje"
+            ></textarea>
+          </div>
+          <div class="form-col">
+            <button type="submit" value="enviar">Enviar Mensaje</button>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/contacto.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+          </div>
+        </form>
       </div>
     </section>
 
@@ -256,7 +278,8 @@
         </div>
       </div>
     </footer>
-    <script src="./JS/button.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
+    <script src="./JS/form.js"></script>
     <script src="./JS/script.js"></script>
   </body>
 </html>
