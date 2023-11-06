@@ -827,7 +827,7 @@ footer h3 {
 
 footer li {
   list-style: none;
-  color: var(--paragraph);
+  color: var(--main60);
   padding: 10px 0;
   font-size: 1.5rem;
   cursor: pointer;
