@@ -1299,6 +1299,10 @@ a.active1 {
   margin-bottom: 1.6rem;
 }
 
+body.active .contact .getin h2 {
+  color: var(--main);
+}
+
 .contact .getin p {
   color: var(--paragraph);
   line-height: 24px;
@@ -1307,12 +1311,20 @@ a.active1 {
   border-bottom: solid 1px var(--paragraph);
 }
 
+body.active .contact .getin p {
+  color: var(--main60);
+}
+
 .contact .getin h3 {
   color: var(--headline);
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 23px;
   margin-bottom: 1.5rem;
+}
+
+body.active .contact .getin h3 {
+  color: var(--main);
 }
 
 .contact .getin .getin-details div {
@@ -1326,6 +1338,10 @@ a.active1 {
   color: var(--buttonBlue);
 }
 
+body.active .contact .getin .getin-details div .get {
+  color: var(--main);
+}
+
 .contact .getin .getin-details div p {
   font-size: 1.4rem;
   border-bottom: none;
@@ -1335,6 +1351,11 @@ a.active1 {
 
 .contact .getin .getin-details .pro-links i {
   margin-right: 8px;
+}
+
+body.active .contact .getin .getin-details .pro-links i {
+  border: solid 1px var(--main60);
+  color: var(--main);
 }
 
 .contact .getin .getin-details div:last-child {
@@ -1349,6 +1370,10 @@ a.active1 {
   border-radius: 5px;
 }
 
+body.active .contact .form {
+  background-color: var(--NavBg);
+}
+
 .contact .form h4 {
   font-size: 24px;
   color: var(--headline);
@@ -1356,10 +1381,18 @@ a.active1 {
   margin-bottom: 8px;
 }
 
+body.active .contact .form h4 {
+  color: var(--main);
+}
+
 .contact .form p {
   color: var(--paragraph);
   line-height: 24px;
   padding-bottom: 2.5rem;
+}
+
+body.active .contact .form p {
+  color: var(--main60);
 }
 
 .contact .form .form-row {
@@ -1380,6 +1413,9 @@ a.active1 {
   padding: 20px 30px;
   margin-bottom: 20px;
 }
+body.active .contact .form .form-row input {
+  background: var(--primary);
+}
 
 .contact .form .form-col input,
 .contact .form .form-col textarea {
@@ -1395,17 +1431,11 @@ a.active1 {
   margin-bottom: 20px;
 }
 
-/* .contact .form button {
-  font-size: 2rem;
-  padding: 13px 25px;
-  background-color: var(--highlight);
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--main);
-} */
+body.active .contact .form .form-col input,
+body.active .contact .form .form-col textarea {
+  background: var(--primary);
+}
+
 .contact .form button {
   cursor: pointer;
   position: relative;
@@ -1416,6 +1446,12 @@ a.active1 {
   border-bottom-left-radius: 10px;
   transition: all 1s;
 }
+
+body.active .form button {
+  color: var(--main60);
+  background: var(--primary);
+}
+
 .contact .form button:after,
 .contact .form button:before {
   content: " ";
@@ -1425,18 +1461,30 @@ a.active1 {
   border: 0px solid #fff;
   transition: all 1s;
 }
+
 .contact .form button:after {
   top: -1px;
   left: -1px;
   border-top: 5px solid black;
   border-left: 5px solid black;
 }
+body.active .form button::after {
+  border-top: 5px solid var(--gray);
+  border-left: 5px solid var(--gray);
+}
+
 .contact .form button:before {
   bottom: -1px;
   right: -1px;
   border-bottom: 5px solid black;
   border-right: 5px solid black;
 }
+
+body.active .contact .form button:before {
+  border-bottom: 5px solid var(--gray);
+  border-right: 5px solid var(--gray);
+}
+
 .contact .form button:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1448,14 +1496,20 @@ a.active1 {
 }
 
 .map {
-  width: 100%;
+  width: 90%;
   height: 70vh;
+  margin-bottom: 8vw;
+  margin: 0 auto;
   margin-bottom: 8vw;
 }
 
 .map iframe {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
+}
+body.active .map iframe {
+  filter: grayscale(1) invert(1);
 }
 
 /* RESPONSIVE FOR TABLETS */
@@ -1685,6 +1739,12 @@ a.active1 {
 
   .contact .form .form-row input {
     width: 100%;
+  }
+  .map {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 8vw;
+    margin-bottom: 8vw;
   }
 }
 
