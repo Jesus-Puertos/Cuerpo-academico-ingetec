@@ -44,14 +44,12 @@ if (localStorage.getItem("activeMode") === "enabled") {
   document.body.classList.add("active");
 }
 
-//Efecto de animacion de scroll
+// Efecto de animación de scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
+      observer.unobserve(entry.target);
     }
   });
 });

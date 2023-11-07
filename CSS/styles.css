@@ -134,6 +134,17 @@ img {
   transform: translateX(0);
 }
 
+/*Animacion a boxes de informacion*/
+.fea-box:nth-child(2) {
+  transition-delay: 200ms;
+}
+.fea-box:nth-child(3) {
+  transition-delay: 400ms;
+}
+.fea-box:nth-child(4) {
+  transition-delay: 600ms;
+}
+
 /*Animacion a tarjetas de produccion academica*/
 .card__article:nth-child(2) {
   transition-delay: 200ms;
