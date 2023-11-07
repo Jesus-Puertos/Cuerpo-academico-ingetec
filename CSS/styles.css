@@ -1290,6 +1290,18 @@ a.active1 {
   line-height: 45px;
 }
 
+/* Blogs */
+.blog-container .blogpost {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.blog-container .blogpost p {
+  text-align: left;
+  line-height: 3rem;
+  padding-bottom: 6rem !important;
+}
+
 /* Contacto */
 .contact {
   padding: 8vw;
@@ -1627,6 +1639,17 @@ body.active .map iframe {
     padding: 8vw 4vw;
   }
 
+  .blog-container .blogpost {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .blog-container .blogpost img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
   /* Contacto */
   .contact {
     padding: 8vw 4vw;
@@ -1721,6 +1744,17 @@ body.active .map iframe {
 
   .blog-container .cate {
     width: 100%;
+  }
+
+  .blog-container .blogpost {
+    width: 100%;
+    margin-top: 7rem;
+  }
+
+  .blog-container .blogpost img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
   }
 
   /* Contacto */
